@@ -1,0 +1,152 @@
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+ 
+ /* Encabezado */
+
+ header {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding-top: 20px; 
+    padding-left: 5%;  
+    padding-right: 5%; 
+    font-weight: bold; 
+}
+
+h1{
+    color: white;
+    font-size: 45px; 
+}
+
+ul li {
+    display: inline-block; 
+    padding: 0px 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:aqua; 
+}
+
+/* Acerca de mi */
+.Acerca-de-mi{
+    display: flex;
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+.interno-content{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.interno-content h2{
+    margin-top: 100px;
+}
+
+.interno-content p{
+    margin-top: 40px;
+}
+
+.interno-content img{
+    align-items: center;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    margin-top: 70px;
+}
+
+
+/* cursos-tecnologias */
+
+.cursos-tecnologias {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro */
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.center-content-cursos {
+    max-width: 600px;
+    background-color: #333;
+}
+
+.content-inner-cursos {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content-inner-cursos h2{
+    margin-top: 10px;
+}
+
+.content-inner-cursos p{
+    margin-top: 40px;
+}
+
+
+/* Formacion */
+
+.formacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 80px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.center-content {
+    text-align: center;
+    max-width: 500px;
+    background-color: #333;
+}
+
+.content-inner{
+    padding: 20px;
+    border-radius: 10px !important;
+    text-align: center;
+}
+
+/* Porfolio */
+
+.portafolio {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.center-content-portfolio {
+    text-align: center;
+    max-width: 600px;
+}
+
+.content-inner-portfolio{
+    padding: 20px;
+    border-radius: 10px !important;
+    text-align: center;
+}
