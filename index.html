@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="stylos.css">
     <script src="codigo.js"></script>
 </head>
-<body>
 
+<body>
     <header>
         <nav>
             <h1>Agustin Genovese</h1>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Formacion</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#formacion">Formacion</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="Acerca-de-mi">
+
+    <section id="acerca-de-mi" class="Acerca-de-mi">
         <div class="content">
             <article class="interno-content">
                 <img src="imagenes/image.png" alt="Imagen frente">
@@ -52,7 +53,7 @@
         </div>
     </section>
 
-    <section class="formacion">
+    <section id="formacion"  class="formacion">
         <article class="center-content">
             <div class="content-inner">
                 <h2 style="margin-bottom: 50px;">Universidad Tecnológica Nacional (UTN)</h2>
@@ -68,7 +69,7 @@
                 <h2 style="margin-bottom: 50px;">Universidad Argentina de la Empresa (UADE)</h2>
                 <h3 style="margin-bottom: 50px;">Licenciado en Turismo y Hotelería</h3>
                 <p style="text-align: justify; margin-bottom: 10px;">
-                    Además, poseo un título de Licenciado en Turismo y Hotelería otorgado por la prestigiosa Universidad Argentina de la Empresa (UADE). Esta formación me ha proporcionado una sólida base en la industria turística y hotelera, dotándome de habilidades clave para abordar los aspectos comerciales y de gestión en este emocionante sector.
+                    Además, poseo un título de Licenciado en Turismo y Hotelería otorgado por la prestigiosa Universidad Argentina de la Empresa (UADE). Esta formación me ha proporcionado una sólida base en la industria turística y hotelera, dotándome de habilidades clave para abordar los aspectos comerciales y de gestión en este sector.
                 </p>
             </div>
         </article>
@@ -80,7 +81,7 @@
                 <h3 style="text-align: center;">Academia Maxi Programa</h3>
                 <p>Curso lógica: Fundamentos de la programación con diagramas de flujo</p>
                 <p>Curso C# Nivel 1: Fundamentos y programación estructurada</p>
-                <p>Curso C# Nivel 2: POO y base de datos SQL. Framework .Net</p>
+                <p id="portafolio">Curso C# Nivel 2: POO y base de datos SQL. Framework .Net</p>
                 <p>Curso C# Nivel 3: Desarrollo Web con ASP .NET WebForms. HTML, CSS, JavaScript y Bootstrap</p>
             </div>
         </div>
@@ -110,14 +111,11 @@
     </section>
 
     <section>
-        <div class="portfolio-items">
+        <div id="portafolio" class="portfolio-items">
             <article class="center-content" style="background-color: black;">
                 <div class="content-inner">
                     <h3 style="margin-bottom: 40px;">Gestor de Articulos</h3>
-                    <video width="320" height="180" controls>
-                        <source src="https://www.youtube.com/watch?v=ycsjuSrDkHA" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/ycsjuSrDkHA?si=xtzC0MbZxV_2tvd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p>Desarrollada con una arquitectura en capas en C#, la aplicación ofrece funcionalidades clave como listado, búsqueda, agregado, modificación y eliminación de artículos. Interactúa de manera eficiente con una base de datos existente.</p>
                 </div>
             </article>
@@ -125,10 +123,7 @@
             <article class="center-content" style="background-color: black;">
                 <div class="content-inner">
                     <h3 style="margin-bottom: 40px;">Juego Star Wars</h3>
-                    <video width="320" height="180" controls>
-                        <source src="https://www.youtube.com/watch?v=ycsjuSrDkHA" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/ycsjuSrDkHA?si=xtzC0MbZxV_2tvd6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p>Juego de plataformas en Python con Pygame y base de datos SQL. Diseñado para ser interactivo y desafiante, consta de tres niveles llenos de acción, poniendo a prueba la destreza y habilidades del jugador.</p>
                 </div>
             </article>
@@ -136,10 +131,7 @@
             <article class="center-content" style="background-color: black;">
                 <div class="content-inner">
                     <h3 style="margin-bottom: 40px;">Ahorcado</h3>
-                    <video width="320" height="180" controls>
-                        <source src="https://www.youtube.com/watch?v=iWpF7Thih98" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/iWpF7Thih98?si=CGqWYFjOFism7YLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p>Juego del ahorcado en Python con conexión a base de datos SQL. Interfaz interactiva que desafía a los jugadores a adivinar palabras en categorías como Historia, Matemáticas, Programación y Fútbol.</p>
                 </div>
             </article>
@@ -149,7 +141,21 @@
 
 
     <footer>
-        <!-- pie de la pagina-->
+        <div>
+            <h2 id="contacto">Contacto: </h2>
+            <p>Email: agusgenot@gmail.com</p>
+            <p style="margin-top: 25px;">Numero Telefonico: 1165919418</p>
+        </div>
+        <div>
+            <p>
+                <a href="https://github.com/AgustinGenovese" target="_blank">
+                    <img src="imagenes/github.png" alt="GitHub Profile">
+                </a>
+                <a href="https://www.linkedin.com/in/agustin-genovese-8b1111148" target="_blank">
+                    <img src="imagenes/lkd.jpg" alt="LinkedIn Profile">
+                </a>
+            </p>
+        </div>
     </footer>
 
 </body>
