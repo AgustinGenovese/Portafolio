@@ -114,6 +114,7 @@ a:hover{
     padding: 80px 0px;
     text-align: center;
     border-radius: 10px;
+    margin-top:-40px;
 }
 
 .center-content {
@@ -130,23 +131,19 @@ a:hover{
 
 /* Porfolio */
 
-.portafolio {
+.portfolio-header {
+    background-color: black;
+    text-align:center;
+}
+
+.portfolio-items {
     display: flex;
     justify-content: space-around;
     background-color: black;
     color: white;
-    padding: 50px 0px;
     text-align: center;
-    border-radius: 10px;
 }
 
-.center-content-portfolio {
-    text-align: center;
-    max-width: 600px;
-}
-
-.content-inner-portfolio{
-    padding: 20px;
-    border-radius: 10px !important;
-    text-align: center;
-}
+.portfolio-items p {
+    text-align: justify;
+    }
