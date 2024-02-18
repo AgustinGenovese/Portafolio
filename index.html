@@ -1,161 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi web</title>
-    <link rel="stylesheet" href="stylos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <h1>Agustin Genovese</h1>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#formacion">Formacion</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<style>
+    .navbar-nav:last-child {
+        margin-left: auto;}
+</style>
 
-    <section id="acerca-de-mi" class="Acerca-de-mi">
-        <div class="content">
-            <article class="interno-content">
-                <img src="imagenes/image.png" alt="Imagen frente">
-            </article>
-        </div>
+<body> 
+    <!-- BARRA NAVEGACION -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#acerca-de-mi">
+                <img src="https://cdn-icons-png.flaticon.com/512/10061/10061736.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="content">
-            <article class="interno-content">
-                <h2>Acerca de mi</h2>
-                <p style="text-align: justify">
-                    Mi enfoque proactivo se combina con una
-                    actitud responsable y habilidades de
-                    trabajo en equipo. Busco oportunidades para aplicar y
-                    ampliar mis conocimientos en un entorno
-                    colaborativo. Listo para contribuir con
-                    creatividad y entusiasmo en proyectos
-                    desafiantes.
-                </p>
-                <p style="text-align: justify">
-                    Aunque carezco de experiencia directa en IT, mi historial en atención al cliente
-                    y roles de coordinación ha desarrollado habilidades valiosas de comunicación
-                    y resolución de problemas. Mi adaptabilidad y enfoque proactivo me posicionan
-                    como un candidato dispuesto a aprender rápidamente y contribuir positivamente al
-                    equipo de IT. Estoy emocionado por la oportunidad de aplicar mis habilidades en
-                    un nuevo desafío.
-                </p>
-                <p style="border: 0px;" id="formacion"></p>
-            </article>           
-        </div>
-    </section>
-
-    <section id="formacion"  class="formacion">
-        <article class="center-content">
-            <div class="content-inner">
-                <h2 style="margin-bottom: 50px;">Universidad Tecnológica Nacional (UTN)</h2>
-                <h3 style="margin-bottom: 25px;">Estudiante de primer año en la Tecnicatura en Programación y Sistemas</h3>
-                <p style="text-align: justify; margin-bottom: 10px;">
-                    Actualmente, estoy cursando mi primer año en la Tecnicatura en Programación y Sistemas en la Universidad Tecnológica Nacional, Facultad Regional Avellaneda. Hasta el momento, he desarrollado en Python con integración de bases de datos SQL, utilizando GitHub como sistema de control de versiones.
-                </p>
-            </div>
-        </article>
-
-        <article class="center-content">
-            <div class="content-inner">
-                <h2 style="margin-bottom: 50px;">Universidad Argentina de la Empresa (UADE)</h2>
-                <h3 style="margin-bottom: 50px;">Licenciado en Turismo y Hotelería</h3>
-                <p style="text-align: justify; margin-bottom: 10px;">
-                    Además, poseo un título de Licenciado en Turismo y Hotelería otorgado por la prestigiosa Universidad Argentina de la Empresa (UADE). Esta formación me ha proporcionado una sólida base en la industria turística y hotelera, dotándome de habilidades clave para abordar los aspectos comerciales y de gestión en este sector.
-                </p>
-            </div>
-        </article>
-    </section>
-
-    <section class="cursos-tecnologias">
-        <div class="center-content-cursos">
-            <div style="text-align: left;" class="content-inner-cursos">
-                <h3 style="text-align: center;">Academia Maxi Programa</h3>
-                <p>Curso lógica: Fundamentos de la programación con diagramas de flujo</p>
-                <p>Curso C# Nivel 1: Fundamentos y programación estructurada</p>
-                <p id="portafolio">Curso C# Nivel 2: POO y base de datos SQL. Framework .Net</p>
-                <p>Curso C# Nivel 3: Desarrollo Web con ASP .NET WebForms. HTML, CSS, JavaScript y Bootstrap</p>
+            <div class="collapse navbar-collapse navbar-dark" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#acerca-de-mi">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Formacion">Formacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                       <a href="https://github.com/AgustinGenovese" target="_blank">
+                            <img src="imagenes/github.png" alt="GitHub" height="30">
+                       </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/agustin-genovese-8b1111148/" target="_blank">
+                            <img src="imagenes/lkd.jpg" alt="lkd" height="30" style="margin-left: 20px;">
+                       </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="center-content-cursos">
-            <div class="content-inner-cursos">
-                <table>
+    <!-- Acerca de mi -->
+
+    <div id="acerca-de-mi" class="container d-flex justify-content-center">
+        <div class="card text-bg-secondary text-light mt-3" style="max-width: 1000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="imagenes/image.png" alt="Imagen frente" class="img-fluid rounded" style="max-height: 800px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body text-center">
+                        <h5 class="card-header mx-auto mb-3" style="width: fit-content;">Agustin Genovese</h5>
+                        <p class="card-text" style="text-align: justify;">Mi enfoque proactivo se combina con una actitud responsable y habilidades de trabajo en equipo. Busco oportunidades para aplicar y ampliar mis conocimientos en un entorno colaborativo. Listo para contribuir con creatividad y entusiasmo en proyectos desafiantes</p>
+
+                        <p class="card-text" style="text-align: justify;">Aunque carezco de experiencia directa en IT, mi historial en atención al cliente y roles de coordinación ha desarrollado habilidades valiosas de comunicación y resolución de problemas. Mi adaptabilidad y enfoque proactivo me posicionan como un candidato dispuesto a aprender rápidamente y contribuir positivamente al equipo de IT. Estoy emocionado por la oportunidad de aplicar mis habilidades en un nuevo desafío</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formacion -->
+
+    <h2>
+    <span class="badge bg-secondary" style="margin-top: 70px; margin-bottom: 10px;">
+        Formacion Academica
+        <img src="imagenes/python.png" alt="Imagen" width="40" style="vertical-align: middle; margin-left: 10px;">
+    </span>
+    </h2>
+
+
+    <div class="row mt-4">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card h-100"> <!-- Añadido h-100 para igualar la altura -->
+        <div class="card-body">
+            <h3 class="card-title text-center mb-4">
+                Universidad Tecnológica Nacional<br>
+                <span style="font-size: smaller;">(UTN)</span>
+            </h3>
+            <h4 class="card-title text-center mb-4">Estudiante de primer año en la Tecnicatura en Programación y Sistemas</h4> <!-- Agregado mb-4 para espacio inferior -->
+            <p class="card-text text-justify mb-4">Actualmente, estoy cursando mi primer año en la Tecnicatura en Programación y Sistemas en la Universidad Tecnológica Nacional, Facultad Regional Avellaneda. Hasta el momento, he desarrollado en Python con integración de bases de datos SQL, utilizando GitHub como sistema de control de versiones.</p> <!-- Agregado mb-4 para espacio inferior -->
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card h-100"> <!-- Añadido h-100 para igualar la altura -->
+        <div class="card-body">
+            <h3 class="card-title text-center mb-4">Universidad Argentina de la Empresa (UADE)</h3> <!-- Agregado mb-4 para espacio inferior -->
+            <h4 class="card-title text-center mb-4">Licenciado en Turismo y Administracion Hotelería</h4> <!-- Agregado mb-4 para espacio inferior -->
+            <p class="card-text text-justify mb-4">Además, poseo un título de Licenciado en Turismo y Hotelería otorgado por la prestigiosa Universidad Argentina de la Empresa (UADE). Esta formación me ha proporcionado una sólida base en la industria turística y hotelera, dotándome de habilidades clave para abordar los aspectos comerciales y de gestión en este sector.</p> <!-- Agregado mb-4 para espacio inferior -->
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <h2><span class="badge bg-secondary" style="margin-top: 35px; margin-bottom: 20px;">Cursos</span></h2>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            TodoCode Academy
+        </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+            <div class="row">
+            <div class="col-md-6">
+                <div style="margin-bottom: 10px;"><strong>Introducción a las Bases de Datos:</strong> Xampp Server y MySQL</div>
+                <div style="margin-bottom: 10px;"><strong>Curso Gestor de Versiones:</strong> Git y GitHub </div>                
+            </div>
+            <div class="col-md-6">
+                <table style="margin: 0 auto;">
                     <tr>
-                        <td><img width="100" src="imagenes/python.png" alt="Python"></td>
-                        <td><img width="100" src="imagenes/c.png" alt="C#"></td>
-                        <td><img width="100" src="imagenes/sql.png" alt="SQL"></td>
-                    </tr>
-                    <tr>
-                        <td><img width="100" src="imagenes/jv.png" alt="JavaScript"></td>
-                        <td><img width="100" src="imagenes/html.png" alt="HTML"></td>
-                        <td><img width="100" src="imagenes/css.png" alt="CSS"></td>
-                    </tr>
-                    <tr>
-                        <td><img width="100" src="imagenes/net.png" alt=".NET"></td>
-                        <td><img width="100" src="imagenes/bt.png" alt="Bootstrap"></td>
-                        <td><img width="100" src="imagenes/github.png" alt="GitHub"></td>
+                        <td><img width="70" src="imagenes/MySQL.png" alt="C#" style="display: block; margin: 5px auto;"></td>
+                        <td><img width="70" src="imagenes/github.png" alt="C#" style="display: block; margin: 5px auto; margin-left: 10px"></td>
                     </tr>
                 </table>
             </div>
+            </div>
         </div>
+        </div>
+    </div>
 
-    </section>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Academia Maxi Programa
+        </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <div class="row">
+            <div class="col-md-6">
+                <div style="margin-bottom: 10px;"><strong>Curso lógica:</strong>  Fundamentos de la programación con diagramas de flujo.</div>
+                <div style="margin-bottom: 10px;"><strong>Curso C# Nivel 1:</strong>  Fundamentos y programación estructurada.</div>
+                <div style="margin-bottom: 10px;"><strong>Curso C# Nivel 2:</strong>  POO y base de datos SQL. Framework .Net .</div>
+                <div style="margin-bottom: 10px;"><strong>Curso C# Nivel 3:</strong>  Desarrollo Web con ASP .NET WebForms. HTML, CSS, JavaScript y Bootstrap.</div>
+            </div>
+            <div class="col-md-6">
+                    <table style="margin: 0 auto;">
+                        <tr>
+                            <td><img width="70" src="imagenes/diag.png" alt="C#" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/c.png" alt="C#" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/sql.png" alt="SQL" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/net.png" alt=".NET" style="display: block; margin: 5px auto;"></td>
+                        </tr>
+                        <tr>
+                            <td><img width="70" src="imagenes/jv.png" alt="JavaScript" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/html.png" alt="HTML" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/css.png" alt="CSS" style="display: block; margin: 5px auto;"></td>
+                            <td><img width="70" src="imagenes/bt.png" alt="Bootstrap" style="display: block; margin: 5px auto;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Portafolio -->
+    <h2><span class="badge bg-secondary" style="margin-top: 35px; margin-bottom: 25px;">Portafolio</span></h2>
 
     <section>
         <div id="portafolio" class="portfolio-items">
-            <article class="center-content" style="background-color: black;">
-                <div class="content-inner">
-                    <h3 style="margin-bottom: 40px;">Gestor de Articulos</h3>
-                    <iframe width="320" height="180" src="https://www.youtube.com/embed/gTxSvxygMw4?si=mY-9txQCSiksvEC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Desarrollada con una arquitectura en capas en C#, la aplicación ofrece funcionalidades clave como listado, búsqueda, agregado, modificación y eliminación de artículos. Interactúa de manera eficiente con una base de datos existente.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Gestor de Articulos</h5>
+                                <iframe width="320" height="180" src="https://www.youtube.com/embed/gTxSvxygMw4?si=mY-9txQCSiksvEC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <p class="card-text">Desarrollada con una arquitectura en capas en C#, la aplicación ofrece funcionalidades clave como listado, búsqueda, agregado, modificación y eliminación de artículos. Interactúa de manera eficiente con una base de datos existente.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Juego Star Wars</h5>
+                                <iframe width="320" height="180" src="https://www.youtube.com/embed/5f-ZkB9pDlY?si=mSCk6sA6x2IcnOr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <p class="card-text">Juego de plataformas en Python con Pygame y base de datos SQL. Diseñado para ser interactivo y desafiante, consta de tres niveles llenos de acción, poniendo a prueba la destreza y habilidades del jugador.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ahorcado</h5>
+                                <iframe width="320" height="180" src="https://www.youtube.com/embed/W-gkovIm9zE?si=7rmmkdU3TfgPpICb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <p class="card-text">Juego del ahorcado en Python con conexión a base de datos SQL. Interfaz interactiva que desafía a los jugadores a adivinar palabras en categorías como Historia, Matemáticas, Programación y Fútbol.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-
-            <article class="center-content" style="background-color: black;">
-                <div class="content-inner">
-                    <h3 style="margin-bottom: 40px;">Juego Star Wars</h3>
-                    <iframe width="320" height="180" src="https://www.youtube.com/embed/5f-ZkB9pDlY?si=mSCk6sA6x2IcnOr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Juego de plataformas en Python con Pygame y base de datos SQL. Diseñado para ser interactivo y desafiante, consta de tres niveles llenos de acción, poniendo a prueba la destreza y habilidades del jugador.</p>
-                </div>
-            </article>
-
-            <article class="center-content" style="background-color: black;">
-                <div class="content-inner">
-                    <h3 style="margin-bottom: 40px;">Ahorcado</h3>
-                    <iframe width="320" height="180" src="https://www.youtube.com/embed/W-gkovIm9zE?si=7rmmkdU3TfgPpICb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Juego del ahorcado en Python con conexión a base de datos SQL. Interfaz interactiva que desafía a los jugadores a adivinar palabras en categorías como Historia, Matemáticas, Programación y Fútbol.</p>
-                </div>
-            </article>
+            </div>
         </div>
-
     </section>
+        
+    <!-- Contacto -->
+    <h2 style="text-align: center;"><span class="badge bg-secondary" style="margin-top: 50px; margin-bottom: 25px;">Contactame</span></h2>
 
-
-    <footer>
-        <div>
-            <h2 id="contacto">Contacto: </h2>
-            <p>Email: agusgenot@gmail.com</p>
-            <p style="margin-top: 25px;">Numero Telefonico: 1165919418</p>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form>
+                <div class="mb-3">
+                    <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control form-control-sm" id="nombreCompleto">
+                </div>
+                <div class="mb-3">
+                    <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control form-control-sm" id="correoElectronico" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control form-control-sm" id="mensaje" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+            </form>
         </div>
-        <div>
-            <p>
-                <a href="https://github.com/AgustinGenovese" target="_blank">
-                    <img src="imagenes/github.png" alt="GitHub Profile">
-                </a>
-                <a href="https://www.linkedin.com/in/agustin-genovese-8b1111148" target="_blank">
-                    <img src="imagenes/lkd.jpg" alt="LinkedIn Profile">
-                </a>
-            </p>
-        </div>
-    </footer>
-
+    </div>
+    
+ 
+    <!-- Bootstrap JavaScript (si lo necesitas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
