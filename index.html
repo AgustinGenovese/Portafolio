@@ -13,21 +13,6 @@
             padding-top: 70px; /* Ajusta el valor según el tamaño de tu barra de navegación */
         }
     </style>
-
-    <script>
-        function enviar_email(){
-            let email = document.getElementById("nombreCompleto").value;
-            let nombre = document.getElementById("correoElectronico").value;
-            let mensaje = document.getElementById("mensaje").value;
-            
-            var asunto = encodeURIComponent("Contacto por Portfolio - " + nombre);
-            var cuerpo = encodeURIComponent(mensaje);
-
-            var mailtoLink = "mailto:agusgenot@gmail.com?subject=" + asunto + "&body=" + cuerpo;
-            window.location.href = mailtoLink;
-        }
-    </script>
-
 </head>
 
 <body>
@@ -243,20 +228,16 @@
 
     <div id="contacto" class="row">
         <div class="col-md-6 mx-auto">
-            <form>
+            <form action="mailto:agusgenot@gmail.com" method="post" enctype="text/plain">
                 <div class="mb-3">
                     <label for="nombreCompleto" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control form-control-sm" id="nombreCompleto">
+                    <input type="text" class="form-control form-control-sm" id="Nombre Completo " name="Nombre Completo ">
                 </div>
                 <div class="mb-3">
-                    <label for="correoElectronico" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control form-control-sm" id="correoElectronico" placeholder="name@example.com">
+                    <label for="Mensaje " class="form-label">Mensaje</label>
+                    <textarea class="form-control form-control-sm" id="Mensaje" name="Mensaje " rows="3"></textarea>
                 </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control form-control-sm" id="mensaje" rows="3"></textarea>
-                </div>
-                <button onclick="enviar_email()" style="margin-bottom: 70px;" type="submit" class="btn btn-primary ">Enviar</button>
+                <button style="margin-bottom: 70px;" type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </div>
