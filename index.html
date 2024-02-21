@@ -13,6 +13,43 @@
             padding-top: 70px; /* Ajusta el valor según el tamaño de tu barra de navegación */
         }
     </style>
+
+    <script>
+        function enviar_email(){
+            let email = document.getElementById("nombreCompleto").value;
+            let nombre = document.getElementById("correoElectronico").value;
+            let mensaje = document.getElementById("mensaje").value;
+
+            fetch('https://api.sendgrid.com/v3/mail/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer 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'
+                },
+                body: JSON.stringify({
+                    personalizations: [
+                        {
+                            to: [{ email: 'agusgenot@gmail.com' }],
+                            subject: 'Nuevo mensaje de contacto por portafolio'
+                        }
+                    ],
+                    from: { email: email, name: nombre },
+                    content: [{ type: 'text/plain', value: mensaje }]
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al enviar el correo electrónico');
+                }
+                alert('Correo electrónico enviado exitosamente');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Hubo un error al enviar el correo electrónico');
+            });
+        }
+    </script>
+
 </head>
 
 <body>
@@ -241,7 +278,7 @@
                     <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea class="form-control form-control-sm" id="mensaje" rows="3"></textarea>
                 </div>
-                <button style="margin-bottom: 70px;" type="submit" class="btn btn-primary ">Enviar</button>
+                <button onclick="enviar_email()" style="margin-bottom: 70px;" type="submit" class="btn btn-primary ">Enviar</button>
             </form>
         </div>
     </div>
